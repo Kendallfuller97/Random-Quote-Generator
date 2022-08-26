@@ -3,11 +3,10 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Random Quotes</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Random Quote Generator</title>
+    <link rel="stylesheet" href="style.css">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
   </head>
-
   <body>
 
       <div class="container">
@@ -16,17 +15,27 @@
             <H1>You Want A Random Quote</H1>
           </header>
         </div> 
+        <br>
         <div class = "row flex-top justify-content-center">
             <button id="load-quote" class="btn-large load-quote" onclick="getQuote()">Click Me For A Random Quote</button>
         </div> 
-        <div class = "row flex-top justify-content-center">
-            <main class="card">
-                <p class="quote-box card-body center" id="quote-box">...</p>
+        <br>
+        <div class = "row flex-top justify-content-center" id="quote-box">
+            <main class="card" id="quote-box">
+                <p class="card-body center">...</p>
             </main>
+
+<!-- I'm not necessarily sure how to Incorporate the "citation and year in the code so I left that out, but the main portion works so that is what matters to me the most "
+  
+  <main class="card" id="quote-box">
+                <p class="card-body center">...<span class="citation">000</span><span class="year">...</span></p>
+                <p class="source">Patrick McKenzie<span class="citation">Twitter</span><span class="year">2016</span></p>
+            </main> -->
+
+
         </div>
       </div>
-     
-
+  
     <script src="main.js" defer ></script>
   </body>
 </html>
